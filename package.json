@@ -1,0 +1,21 @@
+{
+	"name": "jekyll-tailwind",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"serve": "JEKYLL_ENV=debug NODE_ENV=debug bundle exec jekyll serve --livereload",
+		"build": "JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build",
+		"clean": "rm -rf build/ src/.jekyll-cache src/.jekyll-metadata"
+	},
+	"author": "LoganDark",
+	"license": "MIT",
+	"devDependencies": {
+		"autoprefixer": "^10.2.6",
+		"cssnano": "^5.0.6",
+		"cssnano-preset-advanced": "^5.1.3",
+		"postcss": "^8.3.2",
+		"postcss-import": "^14.0.2",
+		"tailwindcss": "^2.1.4"
+	}
+}

@@ -1,0 +1,48 @@
+---
+---
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "src/_includes/monokai.css";
+
+body {
+	@apply p-4;
+}
+
+h1 {
+	@apply text-2xl font-bold mb-2;
+}
+
+p {
+	@apply my-2;
+}
+
+a {
+	@apply text-blue-600 underline;
+}
+
+/*
+ * While it would be nice to use scss for this, be aware
+ * that there is currently an outstanding bug in
+ * jekyll-postcss that causes scss files to not be affected
+ * by minification, even in production.
+ *
+ * https://github.com/mhanberg/jekyll-postcss/issues/30
+ */
+
+a:hover {
+	@apply no-underline text-blue-400;
+}
+
+p > code {
+	@apply px-1 bg-gray-50 border border-gray-100 rounded-sm;
+}
+
+pre {
+	@apply p-4;
+}
+
+div.highlight {
+	@apply rounded overflow-hidden;
+}

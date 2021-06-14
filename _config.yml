@@ -1,0 +1,24 @@
+source: 'src'
+destination: 'build'
+timezone: 'UTC'
+incremental: true
+plugins:
+  - 'jekyll-postcss'
+defaults:
+  -
+    scope:
+      path: '*.md'
+    values:
+      layout: 'default'
+markdown: 'kramdown'
+highlighter: 'rouge'
+kramdown:
+  input: 'GFM'
+  syntax_highlighter: 'rouge'
+  #syntax-highlighter-opts:
+  #  css_class: 'highlight'
+  #  span:
+  #    line_numbers: false
+  #  block:
+  #    line_numbers: true
+  #    start_line: 1
